@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+android:background="@color/material_blue50"
+    android:minWidth="1000dp"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_16dp">
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceMedium"
+
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/note_title"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_border"
+        android:hint="@string/description"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:padding="10dp"
+        android:singleLine="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/add_button_bg"
+            android:text="@string/add"
+            />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@drawable/cancel_button_bg"
+            android:text="@string/cancel"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

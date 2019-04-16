@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_8dp"
+                android:text="@string/title"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_below="@+id/title"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="3dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="description"
+                android:gravity="start"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/option"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:padding="10dp"
+                android:text="@string/option_menu"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/dateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:padding="3dp"
+                android:text="@string/time"
+                android:textAppearance="?android:textAppearanceSmall" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

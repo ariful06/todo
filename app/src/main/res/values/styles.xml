@@ -1,0 +1,97 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <!--toolbar text color-->
+    <style name="collapsingToolbarLayoutTitleColor" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimaryInverse">@color/white</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <!--end of toolbar text color-->
+
+
+
+    <style name="base_edit_text_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:drawablePadding">@dimen/padding_5dp</item>
+        <item name="android:drawableTint" tools:ignore="NewApi">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_16sp</item>
+    </style>
+
+
+    <style name="edit_text_with_white_bg" parent="base_edit_text_style">
+        <item name="android:background">@drawable/edit_text_bg</item>
+    </style>
+
+    <style name="email_edit_text_style" parent="edit_text_with_white_bg">
+        <item name="android:drawableLeft">@drawable/ic_mail</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16dp</item>
+        <item name="android:hint">@string/email</item>
+    </style>
+
+    <style name="user_name_edit_text_style" parent="edit_text_with_white_bg">
+        <item name="android:drawableLeft">@drawable/ic_user</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16dp</item>
+        <item name="android:hint">@string/user</item>
+    </style>
+
+
+    <style name="name_edit_text_style" parent="edit_text_with_white_bg">
+        <item name="android:layout_marginBottom">@dimen/margin_16dp</item>
+
+        <item name="android:hint">@string/user</item>
+    </style>
+
+    <style name="password_edit_text_style" parent="edit_text_with_white_bg">
+        <item name="android:drawableLeft">@drawable/ic_lock</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16dp</item>
+        <item name="android:hint">@string/password</item>
+        <item name="android:inputType">textPassword</item>
+
+    </style>
+
+
+    <style name="base_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginBottom">@dimen/margin_16dp</item>
+        <item name="android:background">@drawable/green_login_button_bg</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="sign_in" parent="base_button_style">
+        <item name="android:text">Sign In</item>
+    </style>
+    <style name="sign_up" parent="base_button_style">
+        <item name="android:text">Register</item>
+    </style>
+
+
+
+
+</resources>
